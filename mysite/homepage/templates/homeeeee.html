@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Francesca Giordano PMU</title>
+    <!-- Collegamento al foglio di stile CSS -->
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -14,7 +15,7 @@
             <h1 class="logo">Francesca Giordano PMU</h1>
         </div>
         <nav class="navbar">
-            <ul class="nav-links">
+            <ul>
                 <li><a href="#services">Servizi</a></li>
                 <li><a href="#products">Prodotti</a></li>
                 <li><a href="#about">Chi sono</a></li>
@@ -23,7 +24,7 @@
         </nav>
     </header>
 
-    <section id="hero" style="background-image: url('{% static 'images/main-homepage.jpg' %}');">
+    <section id="hero">
         <h2>Benvenuti nel mondo della bellezza</h2>
         <p>Trattamenti di dermopigmentazione e molto altro.</p>
         <a href="#services" class="cta-btn">Scopri di più</a>
@@ -33,23 +34,15 @@
         <h2>I miei servizi</h2>
         <div class="service-container">
             <div class="service-item">
-                <img src="{% static 'images/sopracciglia.jpg' %}" alt="Dermopigmentazione Sopracciglia" class="service-img">
-                <h3>Dermopigmentazione Sopracciglia</h3>
-                <p>Descrizione del trattamento.</p>
-            </div>
-            <div class="service-item">
-                <img src="{% static 'images/occhi.jpg' %}" alt="Dermopigmentazione Occhi" class="service-img">
-                <h3>Dermopigmentazione Occhi</h3>
-                <p>Descrizione del trattamento.</p>
-            </div>
-            <div class="service-item">
-                <img src="{% static 'images/labbra.jpg' %}" alt="Dermopigmentazione Labbra" class="service-img">
                 <h3>Dermopigmentazione Labbra</h3>
                 <p>Descrizione del trattamento.</p>
             </div>
             <div class="service-item">
-                <img src="{% static 'images/labbra.jpg' %}" alt="Servizi Estetici" class="service-img">
-                <h3>Servizi Estetici</h3>
+                <h3>Dermopigmentazione Sopracciglia</h3>
+                <p>Descrizione del trattamento.</p>
+            </div>
+            <div class="service-item">
+                <h3>Trattamenti Viso</h3>
                 <p>Descrizione del trattamento.</p>
             </div>
         </div>
@@ -59,12 +52,10 @@
         <h2>Prodotti Accessori</h2>
         <div class="product-grid">
             <div class="product-item">
-                <img src="{% static 'images/crema_viso.jpg' %}" alt="Servizi Estetici" class="product-img">
-                <h3>Servizi Estetici</h3>
+                <h3>Crema viso</h3>
                 <p>Descrizione prodotto.</p>
             </div>
             <div class="product-item">
-                <img src="{% static 'images/kit_sopracciglia.jpg' %}" alt="Kit Sopracciglia" class="product-img">
                 <h3>Kit Sopracciglia</h3>
                 <p>Descrizione prodotto.</p>
             </div>
@@ -78,7 +69,7 @@
 
     <footer id="contact">
         <h2>Contatti</h2>
-        <p>Per info: beauty@francescagiordanopmu.it</p>
+        <p>Via Esempio, 123 - Contattami su: info@francescagiordanopmu.it</p>
     </footer>
 </body>
 </html>

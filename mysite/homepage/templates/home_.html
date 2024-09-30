@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Francesca Giordano PMU</title>
+    <!-- Collegamento al foglio di stile CSS -->
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -14,7 +15,7 @@
             <h1 class="logo">Francesca Giordano PMU</h1>
         </div>
         <nav class="navbar">
-            <ul class="nav-links">
+            <ul>
                 <li><a href="#services">Servizi</a></li>
                 <li><a href="#products">Prodotti</a></li>
                 <li><a href="#about">Chi sono</a></li>
@@ -24,10 +25,11 @@
     </header>
 
     <section id="hero" style="background-image: url('{% static 'images/main-homepage.jpg' %}');">
-        <h2>Benvenuti nel mondo della bellezza</h2>
-        <p>Trattamenti di dermopigmentazione e molto altro.</p>
-        <a href="#services" class="cta-btn">Scopri di più</a>
+    	<h2>Benvenuti nel mondo della bellezza</h2>
+    	<p>Trattamenti di dermopigmentazione e molto altro.</p>
+    	<a href="#services" class="cta-btn">Scopri di più</a>
     </section>
+
 
     <section id="services">
         <h2>I miei servizi</h2>
@@ -43,12 +45,12 @@
                 <p>Descrizione del trattamento.</p>
             </div>
             <div class="service-item">
-                <img src="{% static 'images/labbra.jpg' %}" alt="Dermopigmentazione Labbra" class="service-img">
+		<img src="{% static 'images/labbra.jpg' %}" alt="Dermopigmentazione Labbra" class="service-img">
                 <h3>Dermopigmentazione Labbra</h3>
                 <p>Descrizione del trattamento.</p>
             </div>
-            <div class="service-item">
-                <img src="{% static 'images/labbra.jpg' %}" alt="Servizi Estetici" class="service-img">
+	    <div class="service-item">
+		<img src="{% static 'images/labbra.jpg' %}" alt="Servizi Estetici class="service-img">
                 <h3>Servizi Estetici</h3>
                 <p>Descrizione del trattamento.</p>
             </div>
