@@ -1,0 +1,171 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetic Shop - Bellezza e Benessere</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome per le icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH1zUYl0CtGXh4BfrKaG1n7EL0o+fJdG3yPjG0gpG1u0UZD8s9JJ9NxEwZzjpjYxK/rL5dNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Collegamento al foglio di stile CSS -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h2>Cosmetic Shop</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#dermopigmentazione">Dermopigmentazione</a></li>
+                    <li><a href="#trattamenti">Trattamenti</a></li>
+                    <li><a href="#accessori">Accessori</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                    <li><a href="#account">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>FRANCESCA GIORDANO PMU</h1>
+            <p>Prodotti di alta qualità per prendersi cura di te ogni giorno.</p>
+            <a href="#trattamenti" class="btn">Esplora i Nostri Trattamenti</a>
+        </div>
+    </section>
+
+    <!-- Sezione Dermopigmentazione -->
+    <section id="dermopigmentazione" class="section">
+        <div class="container">
+            <h2>Dermopigmentazione</h2>
+            <div class="grid">
+                <!-- Labbra -->
+                <div class="card">
+                    <img src="{% static 'images/dermopigmentazione-labbra.jpg' %}" alt="Dermopigmentazione Labbra">
+                    <div class="card-content">
+                        <h3>Labbra</h3>
+                        <p>Definizione e colorazione delle labbra per un look naturale e duraturo.</p>
+                        <a href="#" class="btn">Scopri di più</a>
+                    </div>
+                </div>
+                <!-- Contorno Occhi -->
+                <div class="card">
+                    <img src="{% static 'images/dermopigmentazione-occhi.jpg' %}" alt="Dermopigmentazione Contorno Occhi">
+                    <div class="card-content">
+                        <h3>Contorno Occhi</h3>
+                        <p>Rifinisci lo sguardo con un contorno occhi impeccabile.</p>
+                        <a href="#" class="btn">Scopri di più</a>
+                    </div>
+                </div>
+                <!-- Sopracciglia -->
+                <div class="card">
+                    <img src="{% static 'images/dermopigmentazione-sopracciglia.jpg' %}" alt="Dermopigmentazione Sopracciglia">
+                    <div class="card-content">
+                        <h3>Sopracciglia</h3>
+                        <p>Forma e densità delle sopracciglia per un aspetto definito.</p>
+                        <a href="#" class="btn">Scopri di più</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Trattamenti -->
+    <section id="trattamenti" class="section">
+        <div class="container">
+            <h2>Trattamenti per il Viso ed Estetica</h2>
+            <div class="grid">
+                <!-- Trattamento 1 -->
+                <div class="card">
+                    <img src="{% static 'images/trattamenti-viso.jpg' %}" alt="Trattamento Viso">
+                    <div class="card-content">
+                        <h3>Trattamento Viso Personalizzato</h3>
+                        <p>Rivitalizza la tua pelle con trattamenti su misura per ogni esigenza.</p>
+                        <a href="#" class="btn">Prenota Ora</a>
+                    </div>
+                </div>
+                <!-- Trattamento 2 -->
+                <div class="card">
+                    <img src="{% static 'images/trattamenti-estetica.jpg' %}" alt="Trattamento Estetica">
+                    <div class="card-content">
+                        <h3>Estetica Completa</h3>
+                        <p>Servizi di bellezza completi per valorizzare la tua immagine.</p>
+                        <a href="#" class="btn">Prenota Ora</a>
+                    </div>
+                </div>
+                <!-- Trattamento 3 -->
+                <div class="card">
+                    <img src="{% static 'images/trattamenti-bellezza.jpg' %}" alt="Trattamento Bellezza">
+                    <div class="card-content">
+                        <h3>Trattamenti Anti-Aging</h3>
+                        <p>Riduci i segni del tempo con i nostri trattamenti avanzati.</p>
+                        <a href="#" class="btn">Prenota Ora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Prodotti Accessori -->
+    <section id="accessori" class="section">
+        <div class="container">
+            <h2>Prodotti Accessori per Estetica</h2>
+            <div class="grid">
+                <!-- Accessorio 1 -->
+                <div class="card">
+                    <img src="{% static 'images/accessori-estetica-1.jpg' %}" alt="Accessorio 1">
+                    <div class="card-content">
+                        <h3>Spazzola per Sopracciglia</h3>
+                        <p>Mantieni le sopracciglia perfette con la nostra spazzola professionale.</p>
+                        <a href="#" class="btn">Acquista Ora</a>
+                    </div>
+                </div>
+                <!-- Accessorio 2 -->
+                <div class="card">
+                    <img src="{% static 'images/accessori-estetica-2.jpg' %}" alt="Accessorio 2">
+                    <div class="card-content">
+                        <h3>Kit di Trattamento Viso</h3>
+                        <p>Tutto il necessario per un trattamento viso completo a casa tua.</p>
+                        <a href="#" class="btn">Acquista Ora</a>
+                    </div>
+                </div>
+                <!-- Accessorio 3 -->
+                <div class="card">
+                    <img src="{% static 'images/accessori-estetica-3.jpg' %}" alt="Accessorio 3">
+                    <div class="card-content">
+                        <h3>Pennelli Professionali</h3>
+                        <p>Pennelli di alta qualità per un'applicazione perfetta del trucco.</p>
+                        <a href="#" class="btn">Acquista Ora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cosmetic Shop - Tutti i diritti riservati.</p>
+            <p>
+                <a href="#">Privacy</a> | <a href="#">Termini di Servizio</a> | <a href="#">Contatti</a>
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
