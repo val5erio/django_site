@@ -1,69 +1,231 @@
-/* Impostazioni generali */
-body {
-    font-family: 'Montserrat', sans-serif;
+/* Reset di base */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
     color: #333;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #fff;
     padding: 20px;
-    background-color: #f7f7f7;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex; /* Aggiunto per layout flessibile */
+    justify-content: space-between; /* Spazio tra logo e navbar */
+    align-items: center; /* Centra verticalmente gli elementi */
 }
 
 .logo {
     font-family: 'Dancing Script', cursive;
-    font-size: 2.5em;
-    color: #b85c5c;
+    font-size: 2.5rem;
+    color: #ff6f61;
 }
 
-.navbar ul {
-    list-style-type: none;
-    display: flex;
+.navbar {
+    margin-left: auto; /* Sposta la navbar a destra */
 }
 
-.navbar li {
-    margin: 0 15px;
+.nav-links {
+    list-style: none;
+    display: flex; /* Allinea i link in orizzontale */
+    gap: 20px; /* Spaziatura tra i link */
 }
 
-.navbar a {
+.nav-links a {
     text-decoration: none;
     color: #333;
-    font-weight: 700;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-#hero {
-    background-image: url('/path/to/your/image.jpg');
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+.nav-links a:hover {
+    color: #ff6f61;
 }
+
+
+
 
 .cta-btn {
-    background-color: #b85c5c;
+    background-color: #ff6f61;
     color: white;
     padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-/* Sezioni */
-#services, #products, #about, #contact {
-    padding: 50px 20px;
+.cta-btn:hover {
+    background-color: #e65c50;
+}
+
+
+
+/* Stile per la sezione servizi */
+#services {
+    padding: 50px 0;
+    text-align: center; /* Allinea il testo al centro */
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Centra verticalmente gli elementi */
+    
+}
+
+.service-item {
+    flex-basis: 30%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Margine per distanziare gli elementi */
+}
+
+.service-item h3 {
+    color: #ff6f61;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Stile per la sezione prodotti */
+#products {
+    padding: 50px 0;
     text-align: center;
+    background-color: #f1f1f1;
 }
 
-.service-item, .product-item {
-    margin: 20px;
+#products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permette di andare a capo se necessario */
+}
+
+.product-item {
+    flex-basis: 45%;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Margine per distanziare gli elementi */
 }
 
+.product-item h3 {
+    color: #ff6f61;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Sezione Chi sono */
+#about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Stile per la sezione contatti */
+#contact {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+#dermopigmentazione {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#dermopigmentazione h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center; /* Allinea il testo al centro */
+}
+#skin {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#skin h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center; /* Allinea il testo al centro */
+}
+#makeup {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#makeup h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center; /* Allinea il testo al centro */
+}
+
+#hero {
+    background-image: url("{% static 'images/main-homepage.jpg' %}");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative; /* Impedisce all'overlay di estendersi oltre il #hero */
+    z-index: 1;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1; /* L'overlay rimane dietro al testo */
+    width: 100%;
+    height: 100%; /* Assicura che l'overlay copra solo l'area dell'immagine */
+}

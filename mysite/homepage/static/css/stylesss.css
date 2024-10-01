@@ -1,0 +1,69 @@
+/* Impostazioni generali */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    color: #b85c5c;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+}
+
+#hero {
+    background-image: url('/path/to/your/image.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.cta-btn {
+    background-color: #b85c5c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* Sezioni */
+#services, #products, #about, #contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service-item, .product-item {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+

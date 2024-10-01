@@ -15,7 +15,10 @@
         </div>
         <nav class="navbar">
             <ul class="nav-links">
-                <li><a href="#services">Servizi</a></li>
+                <li><a href="#dermopigmentazione">Dermopigmentazione</a></li>
+                <li><a href="#services">Estetica </a></li>
+                <li><a href="#skin">Pelle </a></li>
+                <li><a href="#makeup">Makeup </a></li>
                 <li><a href="#products">Prodotti</a></li>
                 <li><a href="#about">Chi sono</a></li>
                 <li><a href="#contact">Contatti</a></li>
@@ -26,55 +29,109 @@
     <section id="hero" style="background-image: url('{% static 'images/main-homepage.jpg' %}');">
         <h2>Benvenuti nel mondo della bellezza</h2>
         <p>Trattamenti di dermopigmentazione e molto altro.</p>
-        <a href="#services" class="cta-btn">Scopri di più</a>
+        <a href="#dermopigmentazione" class="cta-btn">Scopri di più</a>
     </section>
 
-    <section id="services">
+    <section id="dermopigmentazione">
         <h2>Dermopigmentazione</h2>
         <div class="service-container">
             <div class="service-item">
                 <img src="{% static 'images/sopracciglia.jpg' %}" alt="Sopracciglia" class="service-img">
                 <h3>Sopracciglia</h3>
-                <p>Descrizione del trattamento.</p>
+                <p>Ombreggiatura.</p>
             </div>
             <div class="service-item">
                 <img src="{% static 'images/occhi.jpg' %}" alt="Occhi" class="service-img">
                 <h3>Occhi</h3>
-                <p>Descrizione del trattamento.</p>
+                <p>Trucco permanente.</p>
             </div>
             <div class="service-item">
                 <img src="{% static 'images/labbra.jpg' %}" alt="Labbra" class="service-img">
                 <h3>Labbra</h3>
-                <p>Descrizione del trattamento.</p>
+                <p>Trucco permanente.</p>
             </div>
         </div>
     </section>
-    <section id="products">
-        <h2>Servizi Estetici</h2>
+
+    <section id="services">
+        <h2>Trattamenti Estetici</h2>
         <div class="product-grid">
             <div class="product-item">
                 <img src="{% static 'images/manicure.jpg' %}" alt="Manicure" class="product-img">
-		<h3>Manicure</h3>
+                <h3>Manicure</h3>
                 <p>Descrizione prodotto.</p>
             </div>
             <div class="product-item">
-                <img src="{% static 'images/.jpg' %}" alt="Kit Sopracciglia" class="product-img">
-                <h3>Kit Sopracciglia</h3>
+                <img src="{% static 'images/pedicure.jpg' %}" alt="Pedicure" class="product-img">
+                <h3>Pedicure</h3>
+                <p>Descrizione prodotto.</p>
+            </div>
+            <div class="product-item">
+                <img src="{% static 'images/kit_sopracciglia.jpg' %}" alt="Sopracciglia" class="product-img">
+                <h3>Sopracciglia</h3>
+                <p>Descrizione prodotto.</p>
+            </div>
+            <div class="product-item">
+                <img src="{% static 'images/epilazione.jpg' %}" alt="Epilazione" class="product-img">
+                <h3>Epilazione</h3>
                 <p>Descrizione prodotto.</p>
             </div>
         </div>
     </section>
-    <section id="products">
-        <h2>Prodotti Accessori</h2>
+
+    <section id="skin">
+        <h2>Cura della Pelle</h2>
         <div class="product-grid">
             <div class="product-item">
-                <img src="{% static 'images/crema_viso.jpg' %}" alt="Servizi Estetici" class="product-img">
-                <h3>Servizi Estetici</h3>
+                <img src="{% static 'images/Microneedling.jpg' %}" alt="Microneedling" class="product-img">
+                <h3>Microneedling</h3>
                 <p>Descrizione prodotto.</p>
             </div>
             <div class="product-item">
-                <img src="{% static 'images/kit_sopracciglia.jpg' %}" alt="Kit Sopracciglia" class="product-img">
-                <h3>Kit Sopracciglia</h3>
+                <img src="{% static 'images/Trattamenti anti-invecchiamento.jpg' %}" alt="Trattamenti anti-invecchiamento" class="product-img">
+                <h3>Trattamenti anti-invecchiamento</h3>
+                <p>Descrizione prodotto.</p>
+            </div>
+            <div class="product-item">
+                <img src="{% static 'images/Trattamenti Pulizia del viso.jpg' %}" alt="Pulizia del viso" class="product-img">
+                <h3>Pulizia del viso</h3>
+                <p>Descrizione prodotto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="makeup">
+        <h2>Makeup</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="{% static 'images/Trucco per eventi.jpg' %}" alt="Trucco per eventi" class="product-img">
+                <h3>Trucco per eventi</h3>
+                <p>Descrizione prodotto.</p>
+            </div>
+            <div class="product-item">
+                <img src="{% static 'images/Consulenze di bellezza.jpg' %}" alt="Consulenze di bellezza" class="product-img">
+                <h3>Consulenze di bellezza</h3>
+                <p>Descrizione prodotto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Prodotti di Bellezza</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="{% static 'images/Cosmetici.jpg' %}" alt="Cosmetici" class="product-img">
+                <h3>Cosmetici</h3>
+                <p>Descrizione prodotto.</p>
+            </div>
+            <div class="product-item">
+                <img src="{% static 'images/Prodotti per la cura della pelle.jpg' %}" alt="Prodotti per la cura della pelle" class="product-img">
+                <h3>Prodotti per la cura della pelle</h3>
+                <p>Descrizione prodotto.</p>
+            </div>
+            <div class="product-item">
+                <img src="{% static 'images/Accessori.jpg' %}" alt="Accessori" class="product-img">
+                <h3>Accessori</h3>
                 <p>Descrizione prodotto.</p>
             </div>
         </div>
@@ -91,4 +148,3 @@
     </footer>
 </body>
 </html>
-

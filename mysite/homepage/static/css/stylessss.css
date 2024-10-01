@@ -1,0 +1,82 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.service-item {
+    text-align: center;
+}
+
+.service-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.product-item {
+    text-align: center;
+}
+
+.product-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
