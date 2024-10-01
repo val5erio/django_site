@@ -85,12 +85,20 @@ body {
 }
 
 .service-item {
-    flex-basis: 30%;
+    flex-basis: 30%; /* Mantiene la larghezza attuale del contenitore */
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px; /* Margine per distanziare gli elementi */
+    margin: 10px;
+    text-align: center; /* Allinea il contenuto al centro */
+}
+
+.service-img {
+    width: 100%; /* Imposta la larghezza al 100% del contenitore */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    max-width: 300px; /* Limita la larghezza massima dell'immagine */
+    border-radius: 5px; /* Aggiunge bordi arrotondati se desiderato */
 }
 
 .service-item h3 {
